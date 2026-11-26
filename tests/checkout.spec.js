@@ -19,8 +19,8 @@ test.describe('Belanja & checkout', () => {
       firstName: 'Budi', lastName: 'Santoso', postalCode: '28711',
     });
     await checkoutPage.finish();
-
-    await expect(checkoutPage.completeHeader).toHaveText('Thank you for your order!');
+await expect(checkoutPage.completeHeader).toHaveText('Terima kasih!');
+    
   });
 
   test('checkout gagal jika First Name kosong', async ({
